@@ -1,0 +1,58 @@
+body{
+	font-size:16px;
+}
+
+.hidden{
+	display:none;
+}
+
+.main-headline{
+	text-align:center;
+	margin:20px 0 30px;
+	font-size:2.5rem;
+}
+
+#raster-vector h3{
+	margin:20px;
+	text-align:center;
+}
+
+#image-container{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+}
+
+#image-container img{
+	width:30%;
+	min-width:155px;
+	max-width:375px;
+	align-self:center;
+}
+
+#svg-badge{
+	text-align:center;
+}
+
+/* inline SVG css styles */
+
+#badge{
+	cursor:pointer;
+	width:50%;
+	margin-top:40px;
+}
+
+.st0:hover{
+	opacity:1;
+	fill:#fff;
+}
+
+#red-type{
+	opacity:1;
+	fill:yellow;
+}
+
+#red-type:hover{
+	opacity:1;
+	fill:red;
+}
