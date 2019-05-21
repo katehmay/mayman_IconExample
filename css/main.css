@@ -56,3 +56,9 @@ body{
 	opacity:1;
 	fill:red;
 }
+
+/* THESE ARE DYNAMIC STYLES */
+
+.selected {
+	color: red !important;
+}

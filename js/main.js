@@ -8,7 +8,8 @@
 	// let stores the reference to element as a variable (in memory)
 	let svgGraphic = document.querySelector("#badgeSVG"),
 			mainHeadline = document.querySelector(".main-headline"),
-			rasterVector = document.querySelector(".raster-vector-text");
+			rasterVector = document.querySelector(".raster-vector-text")
+			swapTextButton = document.querySelector(".switch-type");
 
 	//functions are reusable pieces of code
 	//that you can run any time
@@ -18,8 +19,14 @@
 		this.style.opacity = 0.5;
 	}
 
-	svgGraphic.addEventListener("click", logMyId);
+	function swapText() {
+		mainHeadline.textContent = "Now you're something else!";
+		mainHeadline.classList.toggle("selected");
+		rasterVector.textContent = "Sneaky changes made in javascript";
+		rasterVector.classList.toggle("selected");
+	}
 
-	mainHeadline.textContent = "Now you're something else!";
-	rasterVector.textContent = "I'm changing things very sneakily in the javascript file";
+	//events always go down here
+	svgGraphic.addEventListener("click", logMyId);
+	swapTextButton.addEventListener("mouseover", swapText);
 })();
